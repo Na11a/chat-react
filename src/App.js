@@ -3,10 +3,14 @@ import './App.css';
 import Header from './components/Header';
 
 class App extends Component {
+    user = {
+        name:'Max Symonenko'
+    }
   render() {
+      
     return (
       <div id="chat">
-       <Header />
+       <Header user={this.user}/>
         <div id="messages">
           <div class="message">
               <img src="" alt="" />
